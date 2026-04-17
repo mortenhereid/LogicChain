@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunlosky Strategy Engine</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+</head>
+<body>
+
+    <div id="quiz-container">
+        <button id="theme-toggle">🌙 Dark Mode</button>
+        
+        <div id="menu-container">
+            <p id="progress">Knowledge Repository</p>
+            <h2>Select Subject:</h2>
+            <div id="subject-buttons">
+                <button class="option-btn" onclick="init('DunloskyLearningScience.json')">Dunlosky Learning Science</button>
+                <button class="option-btn" onclick="init('ITIL4Framework.json')">ITIL 4 Framework</button>
+                <button class="option-btn" onclick="init('AZ-900.json')"> Microsoft Certified: Azure Fundamentals (AZ-900) </button>
+            </div>
+        </div>
+
+        <div id="quiz-content" class="hidden">
+            <p id="progress"></p>
+            <h2 id="question-text">Loading...</h2>
+            
+            <div id="options-container"></div>
+            
+            <div id="explanation-box" class="hidden">
+                <div id="explanation-text"></div>
+                <div id="practical-box" class="hidden">
+                    <div id="practical-text"></div>
+                </div>
+            </div>
+
+            <button id="next-btn" class="hidden">Next Concept</button>
+        </div>
+
+        <div id="result-area" class="hidden">
+            <h2>Session Complete</h2>
+            <p id="score-text"></p>
+            <button class="restart-btn" onclick="location.reload()">Return to Menu</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

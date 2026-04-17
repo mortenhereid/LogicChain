@@ -1,0 +1,368 @@
+{
+  "questions": [
+    {
+      "question": "According to the monograph, what shared primary cognitive mechanism underlies both elaborative interrogation and self-explanation, placing them in the moderate-utility tier?",
+      "options": [
+        "The automation of physiological responses through imagery for concrete text referents.",
+        "Supporting the integration of new information with existing prior knowledge.",
+        "The reduction of cognitive load via frequent summarization after reading.",
+        "Distinguishing blocked versus interleaved schedules to reduce retrieval demands."
+      ],
+      "answer": 1,
+      "explanation": "Both techniques improve learning by bridging new material to what the learner already knows.",
+      "elaborated_feedback": "The monograph explicitly groups these moderate-utility methods because they both operate via 'supporting the integration of new information with existing prior knowledge.' Elaborative interrogation does this through targeted 'why' questions on discrete facts; self-explanation does it by pausing to process meaning. This mechanism is narrower than the high-utility focus on pure retrieval and spacing, and the paper notes it works best when learners must also discriminate among related facts.",
+      "practical_example": "You are learning that 'photosynthesis converts CO₂ and water into glucose and oxygen.' Instead of just rereading, you pause and ask: 'Why does this process release oxygen?' and connect it to your existing knowledge that plants 'breathe' differently from animals. This integration step is what both techniques demand."
+    },
+    {
+      "question": "What does the monograph conclude about the relative effectiveness of concurrent versus retrospective self-explanation during problem-solving or reading worked examples?",
+      "options": [
+        "Retrospective self-explanation is superior because it allows full reflection after completion.",
+        "Explanation should occur only after the entire problem or example is solved to avoid overload.",
+        "Concurrent self-explanation outperformed retrospective self-explanation in the cited studies.",
+        "The monograph provides no comparative timing data for concurrent versus retrospective self-explanation."
+      ],
+      "answer": 2,
+      "explanation": "Explaining while actively working through material produces stronger results than explaining afterward.",
+      "elaborated_feedback": "The paper cites evidence that concurrent self-explanation—prompted while solving or reading—outperforms retrospective (after-the-fact) explanation. In the classroom example, prompts occurred after every 1 or 2 lines of new information with questions such as 'What parts of this page are new to me? What does the statement mean? Is there anything I still don’t understand?' This timing forces immediate integration rather than delayed review.",
+      "practical_example": "While solving a physics problem on velocity, you explain each line as you read it ('This step means acceleration is changing speed... I still don’t get why direction matters here'). This concurrent approach beats waiting until the end and trying to recall your whole thought process."
+    },
+    {
+      "question": "Why does the monograph place interleaved practice in the moderate-utility category rather than high-utility alongside practice testing?",
+      "options": [
+        "It has been proven ineffective for mathematics and other procedural tasks.",
+        "Its benefits have just begun to be systematically explored and remain preliminary.",
+        "It relies primarily on passive familiarity rather than active retrieval.",
+        "It is useful only for learners with low prior knowledge and does not generalize."
+      ],
+      "answer": 1,
+      "explanation": "While promising, interleaving lacks the robust, settled evidence base of the high-utility techniques.",
+      "elaborated_feedback": "Practice testing and distributed practice are high-utility because they generalize widely. Interleaved practice is moderate-utility specifically because 'its benefits have just begun to be systematically explored.' The core benefit is discrimination among problem types, but the monograph cautions against treating it as equally settled as the top-tier methods.",
+      "practical_example": "When practicing math, you mix percentage, fraction, and decimal problems in one session instead of doing 20 of one type then switching. The evidence for why this helps discrimination is still growing, so the paper ranks it below the more proven high-utility methods."
+    },
+    {
+      "question": "According to the monograph, what specific risk arises from infrequent prompting when applying elaborative interrogation to longer texts?",
+      "options": [
+        "It causes students to rely too heavily on flashcards or external aids.",
+        "It can dilute or even reverse the positive effect of the strategy.",
+        "It forces the brain into unintended massed-practice conditions.",
+        "It increases unintended use of imagery or keyword mnemonics."
+      ],
+      "answer": 1,
+      "explanation": "Sparse prompts fail to sustain the integration process required for the technique to work.",
+      "elaborated_feedback": "The paper warns that elaborative interrogation is 'fairly prescribed' and that infrequent prompting (e.g., far fewer than one per 150 words in text studies) 'can dilute or even reverse the effect.' Successful implementations used 3–4 facts with ~15 seconds each or 21 prompts (~one per 150 words) to maintain tight cognitive integration with prior knowledge.",
+      "practical_example": "You are reading a 900-word biology section on cell division. If you only ask 'Why is this true?' twice in the whole section (instead of roughly every 150 words), the integration with your prior knowledge weakens and the benefit may disappear or even backfire."
+    },
+    {
+      "question": "What prompt frequency for self-explanation does the monograph recommend in the cited classroom example?",
+      "options": [
+        "Roughly one prompt per 150 words of complex text, mirroring elaborative interrogation studies.",
+        "After every 1 or 2 lines of new information to maintain active processing.",
+        "Only when a student reports total confusion, to avoid unnecessary cognitive load.",
+        "Once at the start and once at the end of each chapter or section."
+      ],
+      "answer": 1,
+      "explanation": "Frequent, concurrent prompts prevent learners from glossing over new material.",
+      "elaborated_feedback": "The classroom example prompted self-explanation after 'every 1 or 2 lines of new information' using questions such as 'What parts of this page are new to me?' Concurrent (during-task) explanation outperformed retrospective approaches. The monograph stresses that easy access to provided explanations can cause 'minimal attempts' before consulting answers, weakening the benefit.",
+      "practical_example": "While reading a history textbook paragraph: 'The Treaty of Versailles... [next line] This led to economic instability...' you stop after 1–2 lines and ask yourself the prompts. This keeps you actively processing instead of passively scanning the whole page."
+    },
+    {
+      "question": "How does the monograph explicitly characterize the impact of rereading and highlighting on learning performance?",
+      "options": [
+        "They become high-utility when combined with advanced learners’ prior knowledge.",
+        "They do not consistently improve performance and often create false familiarity.",
+        "They form the ideal 'familiarity base' before any retrieval practice begins.",
+        "They should serve as the primary strategy before introducing practice testing."
+      ],
+      "answer": 1,
+      "explanation": "The paper is unusually direct that these common passive habits lack consistent benefits.",
+      "elaborated_feedback": "Rereading and highlighting are both low-utility. The monograph states they 'do not consistently improve performance' and create only a false sense of familiarity without the retrieval strength produced by high-utility methods. Students are explicitly advised to replace them with practice testing and distributed practice.",
+      "practical_example": "You highlight an entire page on World War I causes and reread it twice, feeling confident because it looks familiar. Yet when tested later, you struggle—exactly the false-familiarity trap the monograph warns against."
+    },
+    {
+      "question": "What cognitive anti-pattern does the monograph identify as directly opposed to the high-utility technique of distributed practice?",
+      "options": [
+        "Substituting flashcards or closed-book recall for passive rereading.",
+        "Mixing problem types within a single study session (interleaving).",
+        "Cramming (massed practice) within a single session instead of spacing.",
+        "Asking 'why is this true?' questions about discrete facts."
+      ],
+      "answer": 2,
+      "explanation": "Massed practice is the direct opposite of spacing study across sessions.",
+      "elaborated_feedback": "Distributed practice (high-utility) requires spreading study over multiple shorter sessions. The implied anti-pattern is cramming, which produces temporary familiarity but rapid forgetting—the exact pattern the monograph contrasts with spacing to boost long-term performance.",
+      "practical_example": "Cramming all of Chapter 7 the night before the exam (one long 4-hour session) versus studying it for 45 minutes on Monday, Wednesday, and Friday. The monograph favors the spaced version for better long-term retention."
+    },
+    {
+      "question": "Which moderate-utility technique does the monograph recommend specifically for discrete facts, with implementations often allotting roughly 15 seconds per fact?",
+      "options": [
+        "Self-explanation while reading worked examples.",
+        "Interleaved practice across multiple problem types.",
+        "Elaborative interrogation using 'why is this true?' prompts.",
+        "Keyword mnemonic for verbal associations."
+      ],
+      "answer": 2,
+      "explanation": "Elaborative interrogation is most effective when prompts remain brief and focused on individual facts.",
+      "elaborated_feedback": "The paper describes studies in which learners received '3 or 4 practice facts' and '15 seconds allotted for each fact.' It is 'fairly prescribed' for discrete facts and becomes less clear or effective for longer, complex material or infrequent prompts.",
+      "practical_example": "Fact: 'The capital of Australia is Canberra.' You spend ~15 seconds asking and answering 'Why is this true?' (It was chosen as a compromise location between Sydney and Melbourne). You do this for 3–4 facts before moving on."
+    },
+    {
+      "question": "What does the monograph identify as the core cognitive mechanism driving the benefits of interleaved practice?",
+      "options": [
+        "Building imagery referents for otherwise abstract text material.",
+        "Learning to discriminate (distinguish) among different problem types.",
+        "Integrating new information through post-reading summarization.",
+        "Spacing study sessions across long retention intervals."
+      ],
+      "answer": 1,
+      "explanation": "Interleaving forces discrimination between similar but distinct skills or concepts.",
+      "elaborated_feedback": "Unlike blocked practice (repeating one type), interleaving requires the learner to choose the correct approach for each mixed problem. The monograph notes this discrimination benefit is promising but 'has just begun to be systematically explored,' which is why it remains moderate-utility rather than high-utility.",
+      "practical_example": "You solve a set of 10 problems that randomly mix addition, subtraction, and multiplication instead of doing all addition first. Your brain must discriminate which operation to use each time—this discrimination is the key mechanism."
+    },
+    {
+      "question": "Why does the monograph rate the keyword mnemonic as low-utility despite its intuitive appeal for verbal facts?",
+      "options": [
+        "It is too similar to high-utility practice testing and therefore redundant.",
+        "It is difficult to implement in many contexts and typically yields only short retention intervals.",
+        "It relies too heavily on distributed practice to show any benefit.",
+        "It is only effective for complex systems rather than simple discrete facts."
+      ],
+      "answer": 1,
+      "explanation": "The technique’s narrow applicability and implementation challenges limit its usefulness.",
+      "elaborated_feedback": "The paper places keyword mnemonic in the low-utility group because it 'is difficult to implement in some contexts' and works best for limited materials with short retention intervals. It does not generalize like practice testing or distributed practice.",
+      "practical_example": "To remember the French word 'pain' (bread), you link it to the English keyword 'pain' (as in hurt) and imagine bread causing stomach pain. This works short-term for vocab lists but is hard to scale to history dates or science concepts and fades quickly."
+    },
+    {
+      "question": "If a student chooses to use highlighting at all, what does the monograph recommend as its proper role?",
+      "options": [
+        "Highlight at least one sentence per paragraph to ensure active engagement.",
+        "Use it only as a very light aid, never as the main study method.",
+        "Coordinate highlighting with keyword mnemonics for verbal material.",
+        "Substitute highlighting for retrieval practice to save time."
+      ],
+      "answer": 1,
+      "explanation": "Highlighting must remain marginal; it cannot replace active retrieval.",
+      "elaborated_feedback": "The monograph rates highlighting low-utility because it 'does not consistently boost performance.' It should be only a minor organizational tool, not the primary strategy. Students are advised to replace passive techniques like highlighting with practice testing.",
+      "practical_example": "You lightly highlight key terms in a psychology chapter while planning to quiz yourself later with flashcards. Highlighting is just a quick visual aid—your real work is the later retrieval practice, not the highlighting itself."
+    },
+    {
+      "question": "In the context of self-explanation, what problem does the monograph identify when learners can easily consult provided explanations or worked examples?",
+      "options": [
+        "Learning speed doubles because of immediate familiarity with the material.",
+        "Learners make 'minimal attempts' to answer prompts before consulting the answer, weakening the benefit.",
+        "Learners integrate prior knowledge more deeply than with concurrent prompts.",
+        "The technique automatically upgrades from moderate- to high-utility."
+      ],
+      "answer": 1,
+      "explanation": "Easy access removes the desirable difficulty that drives the technique’s effectiveness.",
+      "elaborated_feedback": "The paper explicitly warns that when answers are readily available, students 'make minimal attempts to answer the explanatory prompts before consulting the provided information.' This undermines the integration process that makes self-explanation valuable.",
+      "practical_example": "You are studying a worked algebra example. Instead of struggling to explain each step yourself, you immediately glance at the solution key. The monograph warns this shortcut leads to minimal genuine explanation and reduced learning."
+    },
+    {
+      "question": "What does the monograph state regarding any defensible within-tier ordering among the two high-utility techniques?",
+      "options": [
+        "Practice testing is ranked above distributed practice based on broader generalization.",
+        "Distributed practice is ranked above practice testing for long-term retention.",
+        "The paper does not give a defensible within-tier ordering for high-utility techniques.",
+        "The relative ordering depends on the learner’s physiological state during study."
+      ],
+      "answer": 2,
+      "explanation": "Both techniques sit at the top with no official ranking between them.",
+      "elaborated_feedback": "Practice testing and distributed practice are both high-utility with no data provided for finer ranking. The monograph treats them as equal pillars: replace passive review with retrieval (practice testing) and spread sessions over time (distributed practice).",
+      "practical_example": "You can combine them effectively—quiz yourself on Monday (practice testing) and again on Thursday (distributed). The paper does not claim one is clearly superior; both are top-tier and best used together."
+    },
+    {
+      "question": "What does the monograph identify as the practical core recommendation for high-utility techniques in daily study?",
+      "options": [
+        "Focusing primarily on keyword mnemonics and imagery for text learning.",
+        "Replacing passive review with active retrieval and distributed (spaced) practice.",
+        "Reading 1–2 lines then immediately writing a summary of each segment.",
+        "Generating visual imagery referents for every abstract concept encountered."
+      ],
+      "answer": 1,
+      "explanation": "Retrieval plus spacing is the most efficient daily shift students can make.",
+      "elaborated_feedback": "The practical core is clear: 'replace passive review with retrieval and spacing'—quiz yourself (practice testing) instead of rereading, and spread study across multiple shorter sessions instead of cramming. These two high-utility methods generalize widely across learners, materials, and tasks.",
+      "practical_example": "Instead of rereading your notes for 2 hours straight the night before an exam, you close the book and quiz yourself with flashcards for 30 minutes today, tomorrow, and the day after. This retrieval + spacing swap is the monograph’s core daily advice."
+    },
+    {
+      "question": "What major caveat does the monograph attach to the use of imagery for text learning?",
+      "options": [
+        "It requires a mandatory 15-second delay after reading each segment.",
+        "It only works effectively when combined with interleaved practice.",
+        "Its benefits are narrow and depend strictly on the presence of concrete visual referents in the material.",
+        "It consistently outperforms self-explanation for procedural math tasks."
+      ],
+      "answer": 2,
+      "explanation": "Without concrete visual support in the text, imagery adds little value.",
+      "elaborated_feedback": "Imagery is low-utility because 'benefits are narrow and depend on the material.' It works only when the text supports concrete visual referents; it cannot be generalized broadly, unlike the high-utility retrieval and spacing methods.",
+      "practical_example": "When reading a vivid description of a medieval castle (towers, moat, drawbridge), you easily form a mental image. But when reading abstract economic theory with no concrete visuals, imagery provides almost no benefit—exactly the narrow limitation the monograph highlights."
+    },
+    {
+      "question": "During self-explanation of new material, which prompt does the monograph explicitly recommend students ask themselves?",
+      "options": [
+        "“Why is this fact true?” to link it directly to prior knowledge.",
+        "“What parts of this page are new to me?” (along with meaning and understanding checks).",
+        "“How can I convert this into a keyword mnemonic for later recall?”",
+        "“Is this concept high-utility or low-utility according to the rankings?”"
+      ],
+      "answer": 1,
+      "explanation": "Identifying what is new forces active reconciliation with existing knowledge.",
+      "elaborated_feedback": "The paper’s classroom prompt example was: “What parts of this page are new to me? What does the statement mean? Is there anything I still don’t understand?” This occurs after every 1–2 lines, ensuring concurrent processing rather than passive reading.",
+      "practical_example": "Reading a new paragraph on climate change: you pause and think, 'What parts of this page are new to me? The feedback loop with melting permafrost... What does that statement mean? I still don’t fully understand the timescale.' This prompt keeps you engaged."
+    },
+    {
+      "question": "What specific timing schedule does the extracted monograph text provide for optimal practice testing?",
+      "options": [
+        "Test yourself exactly every 24 hours for maximum spacing benefits.",
+        "Data not provided in text for any specific interval schedule.",
+        "Test yourself after every 150 words of new material read.",
+        "Use a fixed schedule of exactly 3 or 4 practice sessions per topic."
+      ],
+      "answer": 1,
+      "explanation": "The paper strongly endorses the action but supplies no precise interval data.",
+      "elaborated_feedback": "Practice testing is high-utility because it boosts performance across many tasks, but the monograph states 'Data not provided in text' for any optimal spacing or testing schedule. The emphasis is on the action—quiz yourself or use flashcards—rather than any single timetable.",
+      "practical_example": "You decide to test yourself on vocabulary words. The monograph strongly recommends the quizzing action but gives no specific rule like 'every 24 hours' or 'after 150 words.' You simply build regular self-testing into your routine however it fits."
+    },
+    {
+      "question": "Where does summarization sit in the monograph’s utility hierarchy?",
+      "options": [
+        "Moderate-utility (promising but limited evidence).",
+        "High-utility (generalizes widely across tasks).",
+        "Low-utility (benefits limited to specific materials and tasks).",
+        "Unsettled/preliminary (benefits just beginning to be explored)."
+      ],
+      "answer": 2,
+      "explanation": "Summarization does not reliably help students grasp underlying concepts.",
+      "elaborated_feedback": "The monograph places summarization, highlighting, keyword mnemonic, imagery, and rereading in the low-utility group. Its benefits are 'limited to some materials and tasks' and do not generalize like practice testing or distributed practice.",
+      "practical_example": "After reading a chapter on the causes of the Industrial Revolution, you write a one-paragraph summary. The monograph rates this low-utility because it often fails to deepen understanding of the underlying concepts compared to quizzing yourself on the same material."
+    },
+    {
+      "question": "What is the monograph’s stated cognitive mechanism for elaborative interrogation?",
+      "options": [
+        "Supporting the integration of new information with existing prior knowledge (plus discriminating among related facts).",
+        "Increasing physiological familiarity with verbal facts through repetition.",
+        "Using imagery referents to bypass the need for active retrieval.",
+        "Reducing the need for discrimination by blocking similar facts together."
+      ],
+      "answer": 0,
+      "explanation": "Asking 'why' builds connections to prior knowledge and requires discrimination.",
+      "elaborated_feedback": "The authors state that elaborative interrogation improves learning by 'supporting the integration of new information with existing prior knowledge' and that learners must 'discriminate among related facts' for it to work well. This is the same integration family as self-explanation.",
+      "practical_example": "Fact: 'Water boils at a lower temperature at high altitudes.' You ask 'Why is this true?' and connect it to your knowledge of air pressure. You also discriminate it from the related fact that freezing point changes differently. This integration + discrimination is the mechanism."
+    },
+    {
+      "question": "What concrete action does the monograph recommend for interleaved practice?",
+      "options": [
+        "Ask 'Why is this true?' after solving every individual math problem.",
+        "Mix problem types rather than blocking one type at a time.",
+        "Highlight different problem types in different colors for visual separation.",
+        "Summarize each problem type in writing before moving to the next type."
+      ],
+      "answer": 1,
+      "explanation": "Interleaving forces the brain to discriminate which skill or rule applies.",
+      "elaborated_feedback": "The recommended action is to mix problem types instead of blocked practice (e.g., 10 addition problems then 10 subtraction problems). This discrimination benefit is why interleaving is moderate-utility, though evidence is still preliminary.",
+      "practical_example": "Instead of doing all 10 algebra problems followed by all 10 geometry problems (blocked), you shuffle them together. Each time you see a new problem, your brain must discriminate: 'Is this algebra or geometry?'"
+    },
+    {
+      "question": "Why does the monograph describe the mechanism claim of the strongest study methods as 'narrow and cognitive, not physiological'?",
+      "options": [
+        "Because brain-imaging studies show no measurable physiological changes during retrieval.",
+        "Because the methods work by forcing specific mental actions such as retrieval, spacing, explanation, or discrimination.",
+        "Because physiological rest and recovery are more important than any cognitive process.",
+        "Because students subjectively prefer cognitive explanations over physiological ones."
+      ],
+      "answer": 1,
+      "explanation": "The power lies in the cognitive processes demanded during study, not bodily responses.",
+      "elaborated_feedback": "The monograph’s core claim is narrow and cognitive: the strongest methods succeed because they 'force retrieval, spacing, explanation, or discrimination'—all mental actions—rather than any physiological change. This distinguishes them from low-utility techniques that merely create familiarity.",
+      "practical_example": "When you close your notes and try to recall a concept (retrieval) or spread your study over days (spacing), the benefit comes from the mental effort involved, not from any physical change in your brain or body. The monograph keeps the explanation focused on these cognitive demands."
+    },
+    {
+      "question": "What key warning does the monograph attach to the moderate-utility rating of interleaved practice?",
+      "options": [
+        "It may produce a false sense of familiarity similar to rereading.",
+        "Do not assume it is as robustly settled or generalizable as high-utility methods like practice testing or distributed practice.",
+        "It should only be used after the material has been reread at least twice.",
+        "It requires concrete visual referents in the problems to be effective."
+      ],
+      "answer": 1,
+      "explanation": "Its evidence base is promising but not yet as strong as the high-utility techniques.",
+      "elaborated_feedback": "The anti-pattern is treating interleaving as equally settled as practice testing or distributed practice. The monograph gives it only moderate utility because benefits 'have just begun to be systematically explored.'",
+      "practical_example": "You love mixing problem types because it feels effective, but you should not treat interleaving as equally proven as daily quizzing or spacing your sessions. The monograph cautions that its benefits are still being explored."
+    },
+    {
+      "question": "In the monograph’s cited study of elaborative interrogation applied to text (rather than discrete facts), what prompt frequency was used?",
+      "options": [
+        "21 elaborative interrogation prompts, roughly one per 150 words.",
+        "After every 1 or 2 lines of new information (self-explanation classroom timing).",
+        "One prompt per chapter or major section only.",
+        "15 seconds allotted per every 3 or 4 pages of text."
+      ],
+      "answer": 0,
+      "explanation": "Frequent prompts are essential to maintain the integration effect in longer material.",
+      "elaborated_feedback": "When used in text, one study employed '21 elaborative interrogation prompts… roughly one prompt per 150 words.' The monograph contrasts this with the 15-second-per-fact timing for discrete facts and warns that too-infrequent prompts can dilute or reverse benefits.",
+      "practical_example": "Here is roughly 150 words of sample text: 'The French and Indian War (1754–1763) was the North American theater of the global Seven Years’ War. British and French colonists, along with their Native American allies, fought for control of territory and trade routes. The conflict ended with the Treaty of Paris in 1763, which transferred vast lands from France to Britain. This victory, however, left Britain with enormous debt, leading to new taxes on the American colonies. These taxes, in turn, fueled growing colonial resentment that would later spark the American Revolution.' Stop and ask 'Why is this true?' about key statements roughly once every block like this."
+    },
+    {
+      "question": "What specific warning does the monograph provide about the keyword mnemonic technique?",
+      "options": [
+        "It leads to dilution of the learning effect when prompts are too infrequent.",
+        "It is difficult to implement in many contexts and works only for limited materials with short retention intervals.",
+        "It should be used concurrently with self-explanation to avoid false familiarity.",
+        "It does not consistently improve performance compared to simple rereading."
+      ],
+      "answer": 1,
+      "explanation": "The technique is niche and often impractical for general study.",
+      "elaborated_feedback": "Keyword mnemonic is low-utility because it 'is difficult to implement in some contexts' and is effective only for a limited set of materials (e.g., verbal facts) and short retention intervals. The paper recommends prioritizing high-utility methods instead.",
+      "practical_example": "You create a vivid story to remember Spanish vocabulary for a quiz next week, and it works well short-term. But when you try the same approach for a semester-long biology course with hundreds of concepts, it becomes too time-consuming and the advantage fades after a few weeks—precisely the limitation the monograph describes."
+    },
+    {
+      "question": "Which technique does the monograph rank as high-utility alongside practice testing, forming the practical core of effective study?",
+      "options": [
+        "Self-explanation (moderate-utility integration technique).",
+        "Distributed practice (spacing study sessions over time).",
+        "Interleaved practice (discrimination among problem types).",
+        "Summarization (low-utility post-reading technique)."
+      ],
+      "answer": 1,
+      "explanation": "Only practice testing and distributed practice occupy the top tier.",
+      "elaborated_feedback": "Sticking strictly to the monograph’s rankings, the two high-utility techniques are practice testing and distributed practice. They generalize widely, while the others are moderate or low. The practical daily advice is to replace passive review with retrieval and spacing.",
+      "practical_example": "For your upcoming biology exam, you space your study across four short sessions over a week (distributed practice) and use flashcards to actively recall definitions instead of rereading notes (practice testing). These two techniques form the high-utility core the monograph recommends."
+    }
+  ],
+  "global_glossary": {
+    "elaborative interrogation": "Asking 'Why is this true?' about a fact to link it to your existing knowledge.",
+    "distributed practice": "Spacing out your study sessions over time instead of studying everything in one long session.",
+    "interleaved practice": "Mixing up different types of problems or topics in one study session.",
+    "retrieval": "The act of actively 'pulling' information out of your memory (like using flashcards).",
+    "monograph": "A detailed, specialized study or paper on a single subject.",
+    "prior knowledge": "What you already know about a topic before you start learning something new.",
+    "discrimination": "The ability to tell the difference between two similar things (like two different types of math problems).",
+    "high-utility": "Techniques that work for almost everyone, in almost any subject, and for any type of test.",
+    "low-utility": "Techniques that are either hard to use, only work in narrow cases, or don't improve learning much.",
+    "discrete facts": "Individual, separate pieces of information (like names, dates, or specific rules).",
+    "concurrent": "Happening at the same time as the activity you are doing.",
+    "retrospective": "Looking back at an activity after you have finished doing it.",
+    "anti-pattern": "A common habit that feels like it should work but actually leads to poor results.",
+    "passive review": "Methods like rereading or highlighting where information just 'passes over' your eyes without effort.",
+    "mechanism": "The specific way a technique changes how your brain processes information.",
+    "cognitive demand": "The total amount of mental effort required to perform a specific task.",
+    "integration": "The process of blending new information into your existing web of knowledge.",
+    "physiological": "Relating to the physical body and its functions (rather than the mind).",
+    "cognitive load": "The used amount of working memory resources.",
+    "extraction": "Information specifically pulled or quoted from a larger source document.",
+    "systematically explored": "Researched using a rigorous, step-by-step scientific method.",
+    "preliminary": "Early-stage findings that require more research to be fully proven.",
+    "robustly settled": "When a theory is backed by so much evidence that it is considered a proven fact in the field.",
+    "dilute": "To make the effectiveness of a strategy weaker by not doing it correctly or often enough.",
+    "consistency": "Doing something the same way over time to ensure the result stays reliable.",
+    "mnemonic": "A memory tool (like an acronym or song) used to help remember specific facts.",
+    "retention interval": "The amount of time that passes between learning something and being tested on it.",
+    "desirable difficulty": "The concept that learning is deeper when the brain has to work harder to process information.",
+    "worked example": "A step-by-step demonstration of how to solve a problem.",
+    "defensible": "Arguments or rankings that are backed up by clear, logical evidence.",
+    "caveat": "A specific warning or limitation that must be considered.",
+    "referents": "The specific objects or ideas that a word or image stands for.",
+    "generalized": "When a principle or finding applies to a wide variety of different situations.",
+    "relegated": "Assigning something to a lower or less important rank or position.",
+    "prescribed": "Specifically stated as a rule or clear instruction to follow.",
+    "moderate utility": "Techniques that are effective but have more limitations or less evidence than high-utility ones.",
+    "hierarchy": "A system of ranking items (like study strategies) from most to least effective."
+  }
+}

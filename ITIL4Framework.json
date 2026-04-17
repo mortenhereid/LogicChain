@@ -1,0 +1,213 @@
+{
+  "questions": [
+    {
+      "question": "According to ITIL 4, what is the core mechanism by which value is realized in modern service management, distinguishing it from traditional one-way delivery models?",
+      "options": [
+        "Through provider-controlled outputs that minimize consumer involvement in costs and risks.",
+        "Via value co-creation, where providers and consumers (plus other stakeholders) actively collaborate to define requirements and achieve perceived benefits.",
+        "Solely by aligning internal resources and technology to reduce operational costs for the provider.",
+        "By focusing exclusively on rapid technological adoption such as cloud, AI, and blockchain without stakeholder input."
+      ],
+      "answer": 1,
+      "explanation": "Value is subjective and co-created through mutual interaction rather than simple delivery.",
+      "elaborated_feedback": "ITIL 4 explicitly states that value is perceived benefits and importance, subjective to stakeholders. Value co-creation moves away from one-way delivery: providers and consumers collaborate, with customers defining requirements, users operating services, and sponsors authorizing budgets. Other stakeholders (employees, partners, regulators, society) also contribute. This underpins all practices and shifts ITSM toward agility and digital transformation.",
+      "practical_example": "Axle provides car hire. The customer (corporate client) defines requirements (no baby seats needed), the user (driver) provides real-time feedback on app usability, and Axle’s cleaning partner contributes to vehicle readiness. Together they co-create value: convenient, reliable travel that reduces the customer’s own fleet-management risks and costs."
+    },
+    {
+      "question": "In ITIL 4, how do 'utility' and 'warranty' together determine a service’s overall viability, and what happens when warranty is inadequate?",
+      "options": [
+        "Utility is the perceived cost; warranty is the availability guarantee—both must be balanced or value drops.",
+        "Utility is 'fit for purpose' (functionality that supports or removes constraints); warranty is 'fit for use' (performance assurance such as availability, security)—poor warranty diminishes value even if utility is high.",
+        "Utility refers to tangible goods in offerings; warranty refers only to service actions performed by the provider.",
+        "Utility is stakeholder perception of outcomes; warranty is internal process efficiency measured by PESTLE factors."
+      ],
+      "answer": 1,
+      "explanation": "Both utility and warranty are essential; warranty failures reduce perceived value despite strong utility.",
+      "elaborated_feedback": "Utility = ‘what the service does’ (‘fit for purpose’). Warranty = ‘how the service performs’ to meet agreed requirements (availability, capacity, continuity, security—‘fit for use’). The text stresses that poor performance (e.g., frequent ride breakdowns) diminishes value even with high utility. Complete viability considers both plus costs and risks.",
+      "practical_example": "Axle’s ride-sharing service has high utility (quick point-to-point transport). But frequent vehicle breakdowns (poor warranty for availability and reliability) cause customer dissatisfaction, lost time, and lower perceived value despite the core function being present."
+    },
+    {
+      "question": "What are the four dimensions of service management in ITIL 4, and why must all four be addressed holistically?",
+      "options": [
+        "People, Processes, Technology, Partners—addressing them prevents silos but is optional for small services.",
+        "Organizations and people, Information and technology, Partners and suppliers, Value streams and processes—neglecting any leads to waste, misalignment, or poor quality.",
+        "Strategy, Design, Transition, Operation—focusing on these ensures compliance with PESTLE factors.",
+        "Governance, Practices, Value Chain, Continual Improvement—these replace the need for the four dimensions."
+      ],
+      "answer": 1,
+      "explanation": "The four dimensions ensure a holistic approach; they are interconnected and apply to all services.",
+      "elaborated_feedback": "The dimensions are: organizations and people (culture, skills, breaking silos), information and technology (data, AI, cloud, security), partners and suppliers (contracts, outsourcing), and value streams and processes (workflows, optimization). They must all be considered at every management level because external factors (PESTLE) influence them and neglecting any causes inefficiency.",
+      "practical_example": "Launching Axle’s new Asia-Pacific app requires: skilled cross-functional teams and culture change (organizations and people), secure booking data and AI route optimization (information and technology), contracts with local insurers (partners and suppliers), and end-to-end booking-to-pickup workflows (value streams and processes). Omitting any dimension creates gaps."
+    },
+    {
+      "question": "Which element is at the center of the ITIL 4 Service Value System (SVS) and functions as a flexible operating model?",
+      "options": [
+        "The four dimensions of service management.",
+        "The service value chain, consisting of six activities that can be combined into multiple value streams.",
+        "The guiding principles alone.",
+        "Governance and continual improvement combined."
+      ],
+      "answer": 1,
+      "explanation": "The service value chain sits at the heart of the SVS and converts demand/opportunity into value.",
+      "elaborated_feedback": "The SVS includes guiding principles, governance, service value chain, practices, and continual improvement. The value chain’s six activities (Plan, Improve, Engage, Design & transition, Obtain/build, Deliver & support) are flexible and combine differently for each value stream.",
+      "practical_example": "For Axle’s incident resolution value stream, the team Plans improvements, Engages users, Designs a fix, Obtains/builds the patch, Delivers support, and Improves based on feedback—using the same six activities differently than for a new app development stream."
+    },
+    {
+      "question": "What are the exact six activities of the ITIL 4 Service Value Chain, and how do they contribute to value creation?",
+      "options": [
+        "Plan, Design, Build, Test, Deploy, Support—focused on linear waterfall delivery.",
+        "Plan, Improve, Engage, Design and transition, Obtain/build, Deliver and support—interconnected activities that transform inputs into stakeholder value via tailored value streams.",
+        "Engage, Deliver, Monitor, Improve, Govern, Optimize—centered on continual improvement only.",
+        "Strategy, Design, Transition, Operation, Continual Service Improvement, Knowledge—aligned with older ITIL versions."
+      ],
+      "answer": 1,
+      "explanation": "The activities are flexible and driven by demand, feedback, and governance.",
+      "elaborated_feedback": "Each activity turns inputs into outputs and can be combined differently for scenarios (e.g., incident resolution vs. app development). They are central to the SVS and enable holistic value creation across all dimensions.",
+      "practical_example": "Axle needs a new driver-assistance feature: Plan the vision, Improve based on safety data, Engage customers, Design and transition the software, Obtain/build the AI component, Deliver and support the update, and Improve post-launch—all using the six activities in one tailored value stream."
+    },
+    {
+      "question": "Which ITIL 4 guiding principle specifically advises assessing and leveraging the current state rather than starting from a complete rebuild?",
+      "options": [
+        "Focus on value.",
+        "Start where you are.",
+        "Keep it simple and practical.",
+        "Optimize and automate."
+      ],
+      "answer": 1,
+      "explanation": "This principle emphasizes observation, measurement, and building on existing value to avoid unnecessary reinvention.",
+      "elaborated_feedback": "Services and methods should be measured and observed accurately (direct observation, meaningful metrics, avoiding Goodhart’s Law biases). The Axle booking-app example showed it met basic needs but needed targeted enhancements rather than a full rebuild.",
+      "practical_example": "Axle wants to modernize its booking system. Instead of discarding the existing app, they observe real usage, measure performance data, and discover it already handles core functions well—then iteratively add biometric login rather than starting over."
+    },
+    {
+      "question": "What does the guiding principle 'Progress iteratively with feedback' explicitly recommend to avoid big-bang failures?",
+      "options": [
+        "Complete large projects in one go for maximum efficiency and speed.",
+        "Organize work into manageable iterations (sequential or simultaneous), using feedback to re-evaluate and refine continuously.",
+        "Focus solely on automation to eliminate the need for human feedback loops.",
+        "Prioritize visibility of progress over actual collaboration or iteration."
+      ],
+      "answer": 1,
+      "explanation": "Smaller iterations with regular feedback improve focus, quality, flexibility, and responsiveness.",
+      "elaborated_feedback": "Iterations can run sequentially or in parallel. Feedback reveals customer perception, process efficiency, and changing needs. The Axle app refinement example started with VIP customers over three months, incorporating feedback before wider rollout.",
+      "practical_example": "Axle refines its mobile app: first iteration for VIP users only (gather feedback on new features), second iteration incorporates changes and tests with a broader group, third iteration rolls out fully—rather than launching a complete redesign to everyone at once."
+    },
+    {
+      "question": "According to ITIL 4, how do stakeholders beyond the service provider and consumer contribute to value co-creation?",
+      "options": [
+        "They only receive services and provide payment—nothing more.",
+        "They actively help define requirements, design solutions, influence outcomes, and realize value across the relationship.",
+        "Only internal employees and regulators are relevant stakeholders.",
+        "Stakeholders are limited to those who authorize budgets (sponsors)."
+      ],
+      "answer": 1,
+      "explanation": "Managing relationships with all stakeholders (employees, partners, regulators, society) is critical to success.",
+      "elaborated_feedback": "Stakeholders include customers (requirements), users (operation), sponsors (budgets), employees, partners, investors, and communities. The text stresses their distinct roles and that effective relationship management drives ongoing value creation.",
+      "practical_example": "When Axle expands to Asia-Pacific and introduces AxleAware (driver assistance), corporate clients define safety needs, drivers (users) test it, regulators set compliance rules, and fleet-maintenance partners update contracts—collectively co-creating safer, lower-cost travel."
+    },
+    {
+      "question": "What does the guiding principle 'Think and work holistically' require organizations to do when making changes?",
+      "options": [
+        "Focus on optimizing individual processes in isolation for maximum clarity.",
+        "View all activities as interconnected systems, manage end-to-end impacts, and use appropriate approaches for simple vs. complex environments.",
+        "Prioritize technology solutions and ignore people, culture, or external PESTLE factors.",
+        "Keep improvements simple by deliberately ignoring upstream and downstream relationships."
+      ],
+      "answer": 1,
+      "explanation": "No service or process operates in isolation; end-to-end visibility of demand and outcomes is essential.",
+      "elaborated_feedback": "Changes in one area affect others; relationships must be identified and managed. Collaboration and automation help. The Axle expansion example considered upstream supplier impacts and downstream customer/support effects.",
+      "practical_example": "Axle’s new regional service launch examines impacts on existing booking systems (upstream), customer support teams (downstream), partner insurance contracts, and regulatory compliance—ensuring the whole organization adapts rather than optimizing one department alone."
+    },
+    {
+      "question": "What is the explicit purpose of the 'Continual Improvement' element within the ITIL 4 Service Value System?",
+      "options": [
+        "To conduct one-time major overhauls when services become outdated.",
+        "To embed ongoing assessment, adaptation, and enhancement at all organizational levels, aligned with strategic objectives.",
+        "To focus exclusively on automating repetitive tasks across the value chain.",
+        "To manage only supplier contracts and external partnerships."
+      ],
+      "answer": 1,
+      "explanation": "Continual improvement is embedded throughout the SVS and supports all value chain activities.",
+      "elaborated_feedback": "It uses a flexible model (vision → current state → target state → plan → action → 'Did we get there?' validation). It applies guiding principles and ensures relevance, efficiency, and learning. The Axle greener-fleet example illustrates incremental, measured changes.",
+      "practical_example": "Axle sets a vision for sustainability, assesses current fleet emissions, defines hybrid-vehicle targets, plans phased rollouts, implements changes, measures results, validates progress ('Did we get there?'), and adjusts—repeating continuously at every level."
+    },
+    {
+      "question": "Which guiding principle encourages using the minimum viable steps, handling exceptions generally, and eliminating unnecessary complexity?",
+      "options": [
+        "Collaborate and promote visibility.",
+        "Keep it simple and practical.",
+        "Focus on value.",
+        "Optimize and automate."
+      ],
+      "answer": 1,
+      "explanation": "Simplify to improve adoption, achieve quick wins, and ensure activities directly contribute to value.",
+      "elaborated_feedback": "Avoid over-complication; design rules that handle exceptions generally. The Axle booking-app example removed low-value data fields to improve speed without losing essential functionality.",
+      "practical_example": "Axle’s booking form originally asked for 15 fields. They removed 7 that added little value, simplified the process, handled rare exceptions with a general 'other' option, and improved user speed and satisfaction."
+    },
+    {
+      "question": "What specific risk does ITIL 4 highlight if the 'Did we get there?' validation step is skipped in the continual improvement model?",
+      "options": [
+        "Automation will fail to scale properly.",
+        "Organizations make unverified assumptions, lose lessons learned, risk regression, and undermine future initiatives.",
+        "Stakeholder visibility will increase unnecessarily, causing overload.",
+        "Value streams will automatically become too holistic and complex."
+      ],
+      "answer": 1,
+      "explanation": "Validation confirms objectives were achieved and remain relevant; skipping it prevents learning and momentum.",
+      "elaborated_feedback": "The step checks results, documents lessons, informs stakeholders if targets are unmet, and triggers further iterations. Without it, improvements become isolated. The biodegradable-products example shows the need to validate progress and revise targets.",
+      "practical_example": "After Axle achieves 90% biodegradable packaging, they still measure actual customer usage and vehicle-emission reductions months later. Discovering slower progress on fleet changes allows them to adjust targets and maintain support for the next initiative."
+    },
+    {
+      "question": "What three main components do ITIL 4 service offerings typically combine to create tailored value for different consumer segments?",
+      "options": [
+        "Goods, access to resources, and service actions.",
+        "Plans, budgets, and risks.",
+        "Utility, warranty, and governance.",
+        "Practices, dimensions, and value streams."
+      ],
+      "answer": 0,
+      "explanation": "These components allow multiple offerings to be created from the same underlying product.",
+      "elaborated_feedback": "Goods = tangible items transferred (e.g., phones, servers). Access to resources = licensed rights without ownership transfer (e.g., network access). Service actions = performed activities (e.g., support, replacement). The text notes multiple offerings (free vs. paid) can come from one product, as in Axle’s varied travel packages.",
+      "practical_example": "Axle’s single car-rental product yields different offerings: a standard car (good), GPS and insurance access (access to resources), and 24/7 roadside assistance or premium cleaning (service actions). Corporate clients receive a tailored combination without weekend rates or baby seats."
+    },
+    {
+      "question": "According to the guiding principle 'Optimize and automate', what must occur before automation is applied?",
+      "options": [
+        "Automate everything immediately to cut costs as fast as possible.",
+        "First understand the current state, optimize the activity, then apply automation iteratively using metrics.",
+        "Focus only on visible collaboration before considering any optimization.",
+        "Start where you are by directly automating legacy systems without prior optimization."
+      ],
+      "answer": 1,
+      "explanation": "Optimization precedes automation for effectiveness; automation then scales streamlined processes.",
+      "elaborated_feedback": "Understand context, use metrics, follow iteration, and monitor impact. Automation reduces error and cost but works best on optimized activities. The Axle biometric damage-check example shows simplification first, then automation.",
+      "practical_example": "Axle first removes unnecessary steps from its manual vehicle-damage inspection process, then trials biometric scanning. This optimized-then-automated approach improves accuracy and reduces errors far more effectively than automating the original complex workflow."
+    },
+    {
+      "question": "What is the precise role of governance within the ITIL 4 Service Value System?",
+      "options": [
+        "To handle day-to-day service delivery, support, and incident resolution.",
+        "To evaluate, direct, and monitor all practices, ensuring alignment with organizational objectives, policies, regulations, and stakeholder needs.",
+        "To focus exclusively on continual improvement iterations and feedback loops.",
+        "To manage only the four dimensions of service management and external PESTLE factors."
+      ],
+      "answer": 1,
+      "explanation": "Governance provides strategic oversight across the entire SVS.",
+      "elaborated_feedback": "Governing bodies are responsible for performance, compliance, and strategic direction. In the SVS, governance maintains oversight so that all components (principles, practices, value chain) support objectives and stakeholder needs.",
+      "practical_example": "Axle’s board evaluates a proposed cloud migration investment, directs alignment with sustainability goals and data-privacy regulations (GDPR), monitors progress via KPIs, and ensures the initiative supports overall stakeholder value rather than just IT efficiency."
+    }
+  ],
+  "global_glossary": {
+    "value co-creation": "Active collaboration between service providers, consumers, and other stakeholders to realize perceived benefits and outcomes.",
+    "utility": "What the service does—functionality that supports or removes constraints ('fit for purpose').",
+    "warranty": "How well the service performs—assurance of availability, capacity, continuity, and security ('fit for use').",
+    "service value system (SVS)": "Holistic model showing how components (guiding principles, governance, service value chain, practices, continual improvement) convert demand and opportunity into value.",
+    "service value chain": "Six flexible activities (Plan, Improve, Engage, Design & transition, Obtain/build, Deliver & support) at the heart of the SVS that create value streams.",
+    "four dimensions": "Organizations and people; Information and technology; Partners and suppliers; Value streams and processes—must all be addressed for holistic service management.",
+    "guiding principles": "Seven recommendations (Focus on value, Start where you are, Progress iteratively with feedback, Collaborate and promote visibility, Think and work holistically, Keep it simple and practical, Optimize and automate) that guide all decisions.",
+    "continual improvement": "Ongoing, embedded assessment and enhancement at every level using a structured model with validation ('Did we get there?').",
+    "stakeholders": "Any entity (customers, users, sponsors, employees, partners, regulators, society) that can affect or be affected by value creation.",
+    "service offerings": "Formal descriptions combining goods, access to resources, and/or service actions to meet specific consumer needs.",
+    "service relationship": "Cooperation between provider and consumer involving provision, consumption, and management.",
+    "PESTLE": "Political, Economic, Social, Technological, Legal, and Environmental external factors that influence service management."
+  }
+}

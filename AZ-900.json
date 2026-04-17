@@ -1,0 +1,666 @@
+{
+  "global_glossary": {
+    "cloud computing": "Renting computing services (servers, storage, databases) over the internet instead of buying and maintaining physical hardware.",
+    "CapEx": "Capital Expenditure—a large upfront investment in physical assets like servers and data centers.",
+    "OpEx": "Operating Expenditure—monthly or ongoing payments for services used, like cloud subscriptions.",
+    "consumption-based model": "Paying only for the computing resources you actually use, similar to paying for electricity by the kilowatt-hour.",
+    "public cloud": "Cloud services available to anyone over the public internet, run by providers like Microsoft Azure.",
+    "private cloud": "Cloud services restricted to a single organization, often hosted on-premises or exclusive hardware.",
+    "hybrid cloud": "A mix of private and public cloud resources working together, allowing organizations to keep sensitive data on-premises.",
+    "serverless compute": "A model where developers write code without managing servers or infrastructure—the cloud provider handles the servers automatically.",
+    "availability": "The percentage of time a system is operational and responds to requests correctly.",
+    "high availability": "A system designed to stay running almost constantly, even when some hardware components fail.",
+    "scalability": "The ability to increase or decrease computing capacity quickly in response to demand.",
+    "vertical scaling": "Adding more power to existing resources (like upgrading a VM to a larger size).",
+    "horizontal scaling": "Adding more resource instances (like creating additional VMs instead of upgrading one).",
+    "disaster recovery": "The ability to restore a service after a major failure within an acceptable time with minimal data loss.",
+    "Azure Storage": "Inexpensive cloud storage service for files, with basic table and queue features.",
+    "Managed Disk": "A managed storage option that reduces infrastructure management burden compared to unmanaged storage accounts.",
+    "Locally redundant storage (LRS)": "Three synchronized copies of data within a single datacenter for protection against hardware failures.",
+    "Zone-redundant storage (ZRS)": "Data replicated across three availability zones in one region for protection if a datacenter fails.",
+    "Geo-redundant storage (GRS)": "Three copies in the primary region plus three copies in a secondary region for geographic disaster recovery.",
+    "Geo-zone-redundant storage (GZRS)": "Zone redundancy in the primary region plus local redundancy in a secondary region—maximum protection.",
+    "Azure Virtual Machines": "Servers running in Azure data centers that function like physical servers but are virtualized.",
+    "Azure Functions": "Small serverless code snippets triggered by events, ideal for lightweight, quick tasks.",
+    "Azure App Services": "Managed platform for hosting full web applications and APIs without managing underlying infrastructure.",
+    "Azure Container Instances": "The quickest way to run containers on Azure without managing servers.",
+    "Azure Kubernetes Service (AKS)": "Container orchestration platform for managing many microservices with automatic scaling and updates.",
+    "Virtual Machine Scale Sets": "A logical group of VMs that automatically scale in or out based on demand.",
+    "Availability Sets": "A logical group of VMs designed to provide redundancy and high availability within a region.",
+    "Azure Web Apps": "Fully managed platform for hosting websites and web applications in common languages like .NET and Python.",
+    "Azure Virtual Network (VNet)": "Representation of a private network in Azure where resources communicate securely.",
+    "subnet": "A subdivision of a virtual network with its own security rules and controls.",
+    "Virtual Network Peering": "Connecting two or more virtual networks in Azure to enable private communication.",
+    "Network Security Group (NSG)": "A set of inbound and outbound rules that control which traffic is allowed through.",
+    "Application Security Group (ASG)": "A way to group related resources to simplify how NSG rules are created and managed.",
+    "User Defined Route (UDR)": "Custom rules that force network traffic over a specific path through your network.",
+    "Azure Firewall": "Managed service that protects virtual networks from unauthorized traffic.",
+    "DDoS Protection": "Defense against distributed denial-of-service attacks; Azure offers a basic free tier and upgraded standard tier.",
+    "Azure Sentinel": "Security monitoring and automated response tool that detects suspicious activity and orchestrates incident response.",
+    "Azure Resources": "Basic building blocks of Azure like virtual machines, databases, and storage accounts.",
+    "Resource Groups": "Folder-like containers that organize and manage related Azure resources.",
+    "Subscriptions": "A billing unit in Azure—resources under a subscription are billed to a single owner.",
+    "Management Groups": "Hierarchy of subscriptions that can be nested, used for organizing multiple subscriptions.",
+    "Azure Blueprints": "Templates for subscriptions that automatically include default policies and users when created.",
+    "Service Trust Portal": "Portal providing access to Azure certifications, regulations, standards, and compliance information.",
+    "GitHub Actions": "Automation tool for running workflows directly from GitHub repositories.",
+    "Azure DevTest Labs": "Self-service environment letting developers create and manage test VMs and resources without waiting for approvals.",
+    "External Identities": "Feature allowing users outside your organization to sign in using their own identities.",
+    "Passwordless authentication": "Removing passwords and replacing them with something you have (phone/laptop) plus something you know or are (PIN/biometrics).",
+    "Availability Zones": "Unique physical locations within an Azure region, each with separate power and cooling—minimum three per region.",
+    "IaaS": "Infrastructure as a Service—renting servers and infrastructure, you manage OS and applications.",
+    "PaaS": "Platform as a Service—managed platform where you deploy code and the provider handles infrastructure.",
+    "SaaS": "Software as a Service—fully managed applications accessed over the internet.",
+    "service model": "Describes what the cloud provider manages versus what the customer manages (IaaS, PaaS, SaaS).",
+    "load balancer": "Distributes incoming traffic across multiple servers to prevent overload on any single server.",
+    "auto-scaling": "Automatically adding or removing computing resources based on current demand.",
+    "fault domain": "A logical group of hardware that shares a single point of failure (like power or cooling).",
+    "update domain": "Logical grouping of hardware that can be updated simultaneously without affecting all instances.",
+    "elasticity": "The ability to quickly increase and decrease resources to match demand.",
+    "region": "A geographic area containing multiple data centers for redundancy and lower latency.",
+    "data residency": "Requirement that certain data must be stored in specific geographic locations for compliance reasons.",
+    "encryption": "Converting data into code to prevent unauthorized access.",
+    "compliance": "Adhering to laws and regulations relevant to your business and data.",
+    "governance": "Policies and controls that ensure resources are used according to organizational standards."
+  },
+  "questions": [
+    {
+      "question": "Which statement best matches the study guide’s definition of cloud computing?",
+      "options": [
+        "Buying servers upfront and installing them in your own data center.",
+        "Renting computing services of all types and making them available in minutes.",
+        "Using only virtual machines and nothing else.",
+        "Running software without any networking or storage costs."
+      ],
+      "answer": 1,
+      "explanation": "The guide defines cloud computing as renting computing services of all types and having them available within minutes.",
+      "elaborated_feedback": "The PDF says cloud computing is \"the ability to rent computing services of all types\" and that these services are available \"in only a few minutes.\" That makes the rented, on-demand model the correct answer, not ownership or a VM-only interpretation.",
+      "practical_example": "A startup launches a new app by creating Azure resources in minutes instead of buying servers and waiting for hardware procurement."
+    },
+    {
+      "question": "What is the study guide’s main point about CapEx versus OpEx?",
+      "options": [
+        "CapEx is monthly usage-based billing, while OpEx is a one-time asset purchase.",
+        "CapEx is a large upfront asset investment, while OpEx is an ongoing operating expense.",
+        "CapEx applies only to software, while OpEx applies only to hardware.",
+        "CapEx is always cheaper than OpEx in the long run."
+      ],
+      "answer": 1,
+      "explanation": "CapEx is an upfront capital purchase; OpEx is an ongoing expense model.",
+      "elaborated_feedback": "The guide defines CapEx as a usually large amount invested up front in an asset and OpEx as money spent \"every month\" as an operating expense. The cloud advantage is that many services shift costs from CapEx to OpEx.",
+      "practical_example": "Instead of buying a room full of servers, a company pays for Azure resources as it uses them each month."
+    },
+    {
+      "question": "Which phrase best matches the study guide’s consumption-based model?",
+      "options": [
+        "Paying a fixed monthly fee whether you use the service or not.",
+        "Paying only when and how much you use a service.",
+        "Paying once for permanent ownership of the service.",
+        "Paying only for software licenses, not infrastructure."
+      ],
+      "answer": 1,
+      "explanation": "Consumption-based pricing means you pay according to actual use.",
+      "elaborated_feedback": "The PDF explicitly defines the consumption-based model as paying for something based on how much you used, rather than paying the same amount no matter what. That is why cloud spending is often variable.",
+      "practical_example": "A storage account that holds little data costs less than one that stores terabytes because billing follows usage."
+    },
+    {
+      "question": "Which cloud model in the guide combines private networks and servers with the public cloud?",
+      "options": [
+        "Public cloud",
+        "Private cloud",
+        "Hybrid cloud",
+        "Isolated cloud"
+      ],
+      "answer": 2,
+      "explanation": "Hybrid cloud is the mix of private infrastructure and public cloud resources.",
+      "elaborated_feedback": "The guide says hybrid cloud is \"a mixture between your own private networks and servers, and using the public cloud for some things.\" That makes it the mixed model, not purely public or purely private.",
+      "practical_example": "A company keeps sensitive workloads on-premises but uses Azure for elastic web hosting during peak traffic."
+    },
+    {
+      "question": "Which description best fits the study guide’s definition of public cloud?",
+      "options": [
+        "Cloud services offered only to a select internal group.",
+        "Cloud services provided over the public Internet to anyone who signs up.",
+        "Cloud services that can only run on-premises.",
+        "Cloud services that require exclusive ownership of all hardware."
+      ],
+      "answer": 1,
+      "explanation": "Public cloud is open to anyone who wants to sign up and is delivered over the public Internet.",
+      "elaborated_feedback": "The PDF describes public cloud as cloud services provided over the public Internet to anyone who wants to sign up, with Azure owning the hardware.",
+      "practical_example": "A small business subscribes to Azure resources without buying its own data center."
+    },
+    {
+      "question": "Which description best fits the study guide’s definition of private cloud?",
+      "options": [
+        "Cloud services provided to anyone on the Internet.",
+        "Cloud services offered only to select users in one organization.",
+        "A service that always uses multiple Azure regions.",
+        "A pricing model where costs are fixed in advance."
+      ],
+      "answer": 1,
+      "explanation": "Private cloud is restricted to select users and typically uses exclusive resources.",
+      "elaborated_feedback": "The PDF says private cloud is offered only to select users and uses resources and servers available only to your organization. That makes it the most restricted cloud type in the guide.",
+      "practical_example": "A government agency runs an internal cloud environment that only its own staff can access."
+    },
+    {
+      "question": "Which option best describes serverless compute in the study guide?",
+      "options": [
+        "A model that removes the need to manage infrastructure and the environment running code.",
+        "A model that requires you to patch and maintain every server yourself.",
+        "A model used only for databases.",
+        "A model that can only run containers."
+      ],
+      "answer": 0,
+      "explanation": "Serverless compute removes infrastructure management and environment configuration.",
+      "elaborated_feedback": "The guide says serverless compute removes both the need to manage the infrastructure and the need to configure the environment that runs your code. That is why it is a strong fit for small, event-driven workloads.",
+      "practical_example": "A function runs automatically when a file is uploaded, without anyone managing a server."
+    },
+    {
+      "question": "Which statement about availability is closest to the guide’s definition?",
+      "options": [
+        "How quickly a system can add more CPUs.",
+        "What percentage of time a system responds properly to requests.",
+        "How often a system is patched.",
+        "How many regions a service supports."
+      ],
+      "answer": 1,
+      "explanation": "Availability is the share of time a system responds properly.",
+      "elaborated_feedback": "The PDF defines availability as what percentage of time a system responds properly to requests. That makes uptime the core idea rather than speed or patching frequency.",
+      "practical_example": "If a service is reachable nearly all the time, it has high availability."
+    },
+    {
+      "question": "What does high availability mean in the study guide?",
+      "options": [
+        "The system has a large storage quota.",
+        "The system is specifically designed to be resilient when a component fails.",
+        "The system uses only one server to avoid complexity.",
+        "The system is only available during office hours."
+      ],
+      "answer": 1,
+      "explanation": "High availability means resilience when part of the system fails.",
+      "elaborated_feedback": "The guide defines high availability as a system specifically designed to be resilient when some component of the system fails. In exam terms, this is the redundancy-and-resilience idea.",
+      "practical_example": "A web app keeps running even if one server goes down because traffic shifts to another instance."
+    },
+    {
+      "question": "Which statement best describes scalability according to the guide?",
+      "options": [
+        "The ability of a system to grow its capacity easily.",
+        "The ability of a system to shut down permanently.",
+        "The ability of a service to reduce costs to zero.",
+        "The ability of a database to encrypt data automatically."
+      ],
+      "answer": 0,
+      "explanation": "Scalability is the ability to increase capacity when demand rises.",
+      "elaborated_feedback": "The study guide defines scalability as the ability to grow capacity easily when a system reaches maximum capacity. It also distinguishes vertical and horizontal scaling.",
+      "practical_example": "An online store adds more VM instances during a holiday sale."
+    },
+    {
+      "question": "What is vertical scaling in the guide?",
+      "options": [
+        "Increasing the number of resource instances.",
+        "Giving the same resource more capacity.",
+        "Moving workloads to a different cloud type.",
+        "Reducing the number of regions in use."
+      ],
+      "answer": 1,
+      "explanation": "Vertical scaling increases capacity of the same resource.",
+      "elaborated_feedback": "The PDF says vertical scaling keeps the same number of resources constant but gives them more capacity. Think of a bigger server rather than more servers.",
+      "practical_example": "You resize a VM to a larger SKU instead of creating a second VM."
+    },
+    {
+      "question": "What is horizontal scaling in the guide?",
+      "options": [
+        "Adding or removing resource instances.",
+        "Increasing CPU within one server.",
+        "Changing storage redundancy.",
+        "Turning a public cloud into a private cloud."
+      ],
+      "answer": 0,
+      "explanation": "Horizontal scaling changes the number of instances.",
+      "elaborated_feedback": "The guide defines horizontal scaling as increasing or decreasing the number of resource instances. That is the classic scale-out model.",
+      "practical_example": "A site adds more web servers behind a load balancer when traffic spikes."
+    },
+    {
+      "question": "Which statement best matches disaster recovery in the study guide?",
+      "options": [
+        "Preventing all failures from ever happening.",
+        "Recovering from a big failure within an acceptable time and data-loss window.",
+        "Using only one backup copy of data.",
+        "Replacing CapEx with OpEx."
+      ],
+      "answer": 1,
+      "explanation": "Disaster recovery is about restoring service after a major failure within acceptable limits.",
+      "elaborated_feedback": "The guide defines disaster recovery as the ability to recover from a big failure within an acceptable period, with an acceptable amount of data lost. That makes recovery time and recovery data loss the key ideas.",
+      "practical_example": "After a regional outage, a service fails over to another region with limited data loss."
+    },
+    {
+      "question": "Which service in the guide is described as a cheap place to store files, with table and queue features?",
+      "options": [
+        "Azure Storage",
+        "Azure Firewall",
+        "Azure Sentinel",
+        "Azure DevTest Labs"
+      ],
+      "answer": 0,
+      "explanation": "Azure Storage is presented as inexpensive file storage with basic table and queue features.",
+      "elaborated_feedback": "The guide says Azure Storage is a cheap place to store files, along with basic table and queue features, and it charges per gigabyte. That makes it the general-purpose storage service in this document.",
+      "practical_example": "You store application files and queue messages in a storage account rather than on a VM disk."
+    },
+    {
+      "question": "What is the study guide’s main distinction for Managed Disk?",
+      "options": [
+        "It is cheaper than Azure Storage and offers fewer features.",
+        "It is slightly more expensive but reduces the burden of managing your own storage account.",
+        "It is only used for databases.",
+        "It replaces virtual networks."
+      ],
+      "answer": 1,
+      "explanation": "Managed Disk costs more but offloads storage-account management.",
+      "elaborated_feedback": "The guide says Managed Disk is slightly more expensive, but it provides additional features that reduce the burden of managing your own storage account. The exam trap is to confuse it with generic file storage.",
+      "practical_example": "A VM uses a managed disk so Azure handles more of the storage plumbing."
+    },
+    {
+      "question": "How does the guide define Locally redundant storage (LRS)?",
+      "options": [
+        "Data is copied across three availability zones in one region.",
+        "Data is synchronously replicated three times within a single datacenter in the primary region.",
+        "Data is copied to a secondary region only.",
+        "Data is stored once to reduce cost."
+      ],
+      "answer": 1,
+      "explanation": "LRS keeps three synchronized copies in one datacenter in the primary region.",
+      "elaborated_feedback": "The PDF defines LRS as data being synchronously replicated three times within a local single data center in the primary region. The key memory hook is one datacenter, three copies.",
+      "practical_example": "A storage account protects data against a single hardware failure inside one datacenter."
+    },
+    {
+      "question": "How does the guide define Zone-redundant storage (ZRS)?",
+      "options": [
+        "Three copies across three availability zones in the primary region.",
+        "Three copies in one datacenter only.",
+        "Three copies in a secondary region only.",
+        "One copy in each of three subscriptions."
+      ],
+      "answer": 0,
+      "explanation": "ZRS spreads synchronized copies across three zones in the primary region.",
+      "elaborated_feedback": "The guide says ZRS is synchronously replicated across three availability zones in the primary region. That is the zone-aware option in the storage ladder.",
+      "practical_example": "If one datacenter in the region fails, the data is still available in the other zones."
+    },
+    {
+      "question": "How does the guide define Geo-redundant storage (GRS)?",
+      "options": [
+        "Three copies in one zone only.",
+        "Three copies in the primary region and three more copies in a single datacenter in a secondary region.",
+        "Three copies in three availability zones only.",
+        "No secondary-region replication at all."
+      ],
+      "answer": 1,
+      "explanation": "GRS adds a secondary region to the LRS pattern.",
+      "elaborated_feedback": "The PDF explains GRS as LRS first, then replication to a single datacenter in a secondary region. The exam often asks you to distinguish region-level protection from zone-level protection.",
+      "practical_example": "A company wants protection if the entire primary region becomes unavailable."
+    },
+    {
+      "question": "How does the guide define Geo-zone-redundant storage (GZRS)?",
+      "options": [
+        "ZRS in the primary region plus LRS in a secondary region.",
+        "LRS in the primary region plus ZRS in a secondary region.",
+        "Only one copy in each region.",
+        "Three copies in one datacenter and no more."
+      ],
+      "answer": 0,
+      "explanation": "GZRS combines zone redundancy in the primary region with local redundancy in the secondary region.",
+      "elaborated_feedback": "The guide says GZRS uses ZRS first, then replicates the data three times in a secondary region using LRS. That makes it the most protection-heavy storage option named in the PDF.",
+      "practical_example": "A mission-critical application wants both zone-level resilience and geographic backup."
+    },
+    {
+      "question": "Which statement best describes Azure Virtual Machines in the guide?",
+      "options": [
+        "A fully managed platform where you only upload code.",
+        "A server-like environment running inside Azure’s data center in a virtualized environment.",
+        "A small event-driven code service.",
+        "A tool for defining subscription templates."
+      ],
+      "answer": 1,
+      "explanation": "Virtual Machines are the IaaS server model in the guide.",
+      "elaborated_feedback": "The PDF says Virtual Machines look and act like a real server, except they run inside Azure’s data center in a virtualized environment. That makes them the most server-like option in the service matrix.",
+      "practical_example": "You need full operating-system control for a legacy application, so you deploy a VM."
+    },
+    {
+      "question": "What is the best distinguisher between Azure Functions and Azure App Services in the guide?",
+      "options": [
+        "Functions are small serverless pieces of code; App Services host full applications on a managed platform.",
+        "Functions are only for web apps; App Services are only for timers.",
+        "Functions require more infrastructure management than App Services.",
+        "They are identical in the guide."
+      ],
+      "answer": 0,
+      "explanation": "Functions are for small tasks and App Services are for hosting full applications.",
+      "elaborated_feedback": "The guide describes Azure Functions as small pieces of code designed to perform a task quickly in a serverless model, while Azure App Services lets you upload code and configuration and have Azure run the application. That is the exam-relevant difference.",
+      "practical_example": "Use Functions for a lightweight event handler and App Services for the main web application."
+    },
+    {
+      "question": "Which statement best describes Azure Container Instances in the study guide?",
+      "options": [
+        "It is the quickest way to create a container on Azure.",
+        "It is a full Kubernetes orchestration platform.",
+        "It is a storage redundancy option.",
+        "It is a governance template tool."
+      ],
+      "answer": 0,
+      "explanation": "ACI is described as the fastest way to spin up a container.",
+      "elaborated_feedback": "The PDF says Azure Container Instances is the quickest way to create a container on Azure and that it can be used in production but is not easily scalable. That makes speed its key differentiator.",
+      "practical_example": "You need to run a container briefly without managing any virtual machines."
+    },
+    {
+      "question": "Which statement best describes Azure Kubernetes Service (AKS) in the guide?",
+      "options": [
+        "A simple serverless function hosting service.",
+        "Kubernetes containers in Azure with autoscaling and more operational overhead.",
+        "A file storage service for backups.",
+        "A policy service for subscriptions."
+      ],
+      "answer": 1,
+      "explanation": "AKS is the Kubernetes orchestration option in Azure.",
+      "elaborated_feedback": "The guide says AKS is Kubernetes containers in Azure, runs on VM Scale Sets, has autoscaling, and requires more overhead to run. The key exam contrast is that it is more complex than ACI.",
+      "practical_example": "A team running many microservices chooses AKS because it needs orchestration and scaling control."
+    },
+    {
+      "question": "Which statement best describes Azure Virtual Machine Scale Sets?",
+      "options": [
+        "A logical group of VMs managed as a single unit, able to scale out and in.",
+        "A security rule set for network traffic.",
+        "A storage redundancy method.",
+        "A service for external identities."
+      ],
+      "answer": 0,
+      "explanation": "Scale sets manage groups of VMs and allow autoscaling.",
+      "elaborated_feedback": "The guide defines Virtual Machine Scale Sets as a logical group of VMs that can be configured and managed as one unit, with the ability to add or remove machines as demand changes. This is the standard autoscaling VM answer.",
+      "practical_example": "An ecommerce app automatically adds more VMs during a promotion and removes them afterward."
+    },
+    {
+      "question": "Which statement best describes Azure Virtual Machine Availability Sets?",
+      "options": [
+        "A group designed to provide redundancy and availability to meet the Azure SLA.",
+        "A way to route traffic through a specific path.",
+        "A tool for grouping subscriptions.",
+        "A file storage tier with geo replication."
+      ],
+      "answer": 0,
+      "explanation": "Availability Sets are about redundancy and SLA support.",
+      "elaborated_feedback": "The guide says Availability Sets are a logical group designed to provide redundancy and availability to meet the Azure SLA. That is different from Scale Sets, which focus on scaling.",
+      "practical_example": "You distribute VMs across fault domains so one hardware issue does not take the service down."
+    },
+    {
+      "question": "What is the best fit for Azure Web Apps in the study guide?",
+      "options": [
+        "Hosting websites on a fully managed platform with common languages like .NET and Python.",
+        "Creating a private network between VNets.",
+        "Monitoring security incidents.",
+        "Running a container image without a VM."
+      ],
+      "answer": 0,
+      "explanation": "Web Apps are the managed web-hosting option in Azure App Service.",
+      "elaborated_feedback": "The guide says Azure Web Apps offer a completely managed platform for creating and hosting web applications and supports common languages such as .NET, Java, Node.js, Python, and PHP. That makes it the clear web-hosting choice.",
+      "practical_example": "A company deploys its public website to Azure Web Apps instead of building server infrastructure."
+    },
+    {
+      "question": "Which statement best describes Azure Virtual Network?",
+      "options": [
+        "A representation of a real network used for Azure resources.",
+        "A database service for structured data.",
+        "A compliance portal for certifications.",
+        "A Git-based source-control platform."
+      ],
+      "answer": 0,
+      "explanation": "A virtual network is the network boundary for Azure resources.",
+      "elaborated_feedback": "The PDF defines a virtual network as a representation of a real network. It also states that virtual machines must be connected to a VNet subnet to communicate according to the network rules you define.",
+      "practical_example": "A VM is placed in a subnet so it can talk to other resources under controlled network rules."
+    },
+    {
+      "question": "Which statement best describes a virtual subnet according to the guide?",
+      "options": [
+        "A subdivision of a virtual network with its own security rules.",
+        "A backup copy of a storage account.",
+        "A subscription billing container.",
+        "A container orchestration cluster."
+      ],
+      "answer": 0,
+      "explanation": "Subnets divide a VNet and can have their own controls.",
+      "elaborated_feedback": "The guide describes a virtual subnet as a subdivision of a virtual network that you control and that has its own security rules. This is a common networking exam point.",
+      "practical_example": "You place front-end VMs in one subnet and database VMs in another."
+    },
+    {
+      "question": "What does Virtual Network Peering do in the study guide?",
+      "options": [
+        "Connects two or more virtual networks in Azure.",
+        "Groups resources so NSG rules are simpler.",
+        "Forces traffic to use a specific path.",
+        "Adds a second copy of data in another region."
+      ],
+      "answer": 0,
+      "explanation": "VNet peering connects VNets together.",
+      "elaborated_feedback": "The guide says virtual network peering allows you to connect two or more virtual networks in Azure. That is the direct connectivity feature, not the filtering or routing feature.",
+      "practical_example": "Two business units use separate VNets but need private communication between them."
+    },
+    {
+      "question": "Which statement best describes a Network Security Group (NSG) in the guide?",
+      "options": [
+        "A basic set of inbound and outbound traffic rules.",
+        "A service that hosts web apps.",
+        "A tool for external users to log in.",
+        "A storage replication method."
+      ],
+      "answer": 0,
+      "explanation": "NSGs filter traffic using allow/deny rules.",
+      "elaborated_feedback": "The guide describes NSGs as a fairly basic set of rules for inbound and outbound traffic that specify which sources, destinations, and ports are allowed through. That is the baseline network control in the material.",
+      "practical_example": "You allow port 443 to a web subnet but block everything else by default."
+    },
+    {
+      "question": "What is the primary purpose of an Application Security Group (ASG) in the guide?",
+      "options": [
+        "To simplify the way NSG rules are created by grouping related resources.",
+        "To encrypt storage data at rest.",
+        "To replace resource groups.",
+        "To route traffic through a firewall appliance."
+      ],
+      "answer": 0,
+      "explanation": "ASGs make NSG rules easier to manage.",
+      "elaborated_feedback": "The guide says ASGs are a way of grouping related resources together to simplify how NSG rules are created. The key distinction is that ASGs help organize NSG rule targets; they are not the rules themselves.",
+      "practical_example": "You place all front-end VMs in one ASG and write one NSG rule for that group."
+    },
+    {
+      "question": "What does a User Defined Route (UDR) do in the guide?",
+      "options": [
+        "Forces traffic over a specific path in a virtual network.",
+        "Groups subscriptions into a hierarchy.",
+        "Creates a serverless function.",
+        "Creates storage redundancy across zones."
+      ],
+      "answer": 0,
+      "explanation": "UDRs control the path traffic takes through a network.",
+      "elaborated_feedback": "The PDF defines UDR as a way of forcing traffic travelling over a virtual network over a specific path, often used with Firewall devices or ExpressRoute. That makes it the routing control concept.",
+      "practical_example": "Traffic from a subnet is forced through a security appliance before reaching the Internet."
+    },
+    {
+      "question": "Which statement best describes Azure Firewall in the study guide?",
+      "options": [
+        "A managed service that protects virtual networks from unauthorized traffic.",
+        "A tool for runtime container orchestration.",
+        "A method for grouping VMs into scale sets.",
+        "A template system for new subscriptions."
+      ],
+      "answer": 0,
+      "explanation": "Azure Firewall is the managed network protection service in the guide.",
+      "elaborated_feedback": "The guide describes Azure Firewall as a managed service inside Azure that protects virtual networks from unauthorized traffic. It is not the same thing as an NSG, because it sits at a different layer of defense.",
+      "practical_example": "All outbound and inbound traffic is inspected through a firewall before reaching the VNet."
+    },
+    {
+      "question": "Which statement best describes Azure DDoS Protection in the guide?",
+      "options": [
+        "It is a paid-only service with no free protection.",
+        "It includes a basic free level and an upgraded standard level with logging and alerting.",
+        "It is the same as Azure Firewall.",
+        "It only protects data stored in Azure Storage."
+      ],
+      "answer": 1,
+      "explanation": "The guide distinguishes free basic DDoS protection from the paid standard tier.",
+      "elaborated_feedback": "The PDF says Azure DDoS Protection has a basic level included free and a standard level that adds logging, alerting, and telemetry. The exam trap is confusing DDoS defense with generic firewall rules.",
+      "practical_example": "A public-facing site uses standard DDoS protection to detect and respond to flood attacks."
+    },
+    {
+      "question": "What is Azure Sentinel according to the study guide?",
+      "options": [
+        "A security information event management and security orchestration automated response solution.",
+        "A storage replication tier.",
+        "A web hosting service.",
+        "A virtual machine backup method."
+      ],
+      "answer": 0,
+      "explanation": "Sentinel is the SIEM/SOAR product named in the guide.",
+      "elaborated_feedback": "The guide defines Azure Sentinel as a security information event management and security orchestration automated response solution. That places it in monitoring and response, not network access control.",
+      "practical_example": "A security team uses Sentinel to detect suspicious activity and automate incident response."
+    },
+    {
+      "question": "Which statement best describes Azure Resources?",
+      "options": [
+        "They are the basic building blocks of Azure, such as VMs and databases.",
+        "They are only used for billing reports.",
+        "They are the same as management groups.",
+        "They are identical to subscriptions."
+      ],
+      "answer": 0,
+      "explanation": "Resources are the basic units you create and manage in Azure.",
+      "elaborated_feedback": "The guide calls Azure Resources the basic building block of Azure and gives examples like VM, VNets, DB, and container. That is the foundational organization concept for the platform.",
+      "practical_example": "A VM, a storage account, and a database are all separate Azure resources."
+    },
+    {
+      "question": "What is the function of Resource Groups in the guide?",
+      "options": [
+        "A folder-like structure used to organize resources.",
+        "A billing unit for Azure charges.",
+        "A hierarchy of subscriptions.",
+        "A policy template for new tenants."
+      ],
+      "answer": 0,
+      "explanation": "Resource groups are for organizing resources.",
+      "elaborated_feedback": "The guide describes Resource Groups as a folder structure in Azure in which you organize resources like databases, virtual machines, and virtual networks. They help with management, not billing hierarchy.",
+      "practical_example": "You keep all resources for one app in a single resource group so they are easy to manage."
+    },
+    {
+      "question": "What is the function of Subscriptions in the guide?",
+      "options": [
+        "They are a billing unit within Azure.",
+        "They are used only for access control.",
+        "They are a type of storage redundancy.",
+        "They are the same as virtual networks."
+      ],
+      "answer": 0,
+      "explanation": "Subscriptions collect resources under one billing owner.",
+      "elaborated_feedback": "The guide defines subscriptions as a billing unit within Azure and notes that resources under a subscription get billed to a single owner. This is one of the easiest AZ-900 distinctions to test.",
+      "practical_example": "A company separates development and production into different subscriptions for billing clarity."
+    },
+    {
+      "question": "What is the role of Management Groups in the guide?",
+      "options": [
+        "A hierarchy of subscriptions that can be nested.",
+        "A kind of virtual machine storage.",
+        "A way to replace virtual networks.",
+        "A service for running Git repositories."
+      ],
+      "answer": 0,
+      "explanation": "Management groups organize multiple subscriptions into a hierarchy.",
+      "elaborated_feedback": "The PDF says management groups are a hierarchy of subscriptions and can contain many subscriptions and even other groups. This is the organizational layer above subscriptions.",
+      "practical_example": "An enterprise groups multiple departmental subscriptions under one management group for policy control."
+    },
+    {
+      "question": "What is Azure Blueprints used for in the study guide?",
+      "options": [
+        "Defining templates for subscriptions so they start with default policies and users.",
+        "Routing packets between subnets.",
+        "Creating containers from images.",
+        "Backing up storage accounts to another region."
+      ],
+      "answer": 0,
+      "explanation": "Blueprints are subscription templates with preconfigured governance.",
+      "elaborated_feedback": "The guide says Azure Blueprints define templates for subscriptions so new subscriptions already come with a default set of users and policies. The exam angle is governance-by-template.",
+      "practical_example": "A new subscription is created with baseline security policies already applied."
+    },
+    {
+      "question": "What does the Service Trust Portal provide according to the guide?",
+      "options": [
+        "Access to certifications, regulations, standards, and regional resources.",
+        "A place to run virtual machines.",
+        "A billing dashboard for subscriptions.",
+        "A container registry."
+      ],
+      "answer": 0,
+      "explanation": "The Service Trust Portal is an information portal for compliance and standards content.",
+      "elaborated_feedback": "The PDF says the Service Trust Portal provides access to certifications, regulations and standards, and industry and regional resources. That makes it a compliance and trust reference point.",
+      "practical_example": "A compliance team checks the portal for Azure’s documented certifications."
+    },
+    {
+      "question": "What is GitHub Actions used for in the guide?",
+      "options": [
+        "Automating software development workflows from within GitHub.",
+        "Protecting virtual networks from unauthorized traffic.",
+        "Creating storage redundancy across regions.",
+        "Managing Azure subscriptions."
+      ],
+      "answer": 0,
+      "explanation": "GitHub Actions is the workflow automation tool named in the guide.",
+      "elaborated_feedback": "The PDF says GitHub Actions is used to help automate software development workflows from within GitHub. It belongs to DevOps automation, not Azure governance or networking.",
+      "practical_example": "A code push triggers a build-and-test pipeline automatically."
+    },
+    {
+      "question": "What is Azure DevTest Labs used for according to the guide?",
+      "options": [
+        "Letting developers self-manage VMs and PaaS resources without waiting for approvals.",
+        "Creating a global storage replication strategy.",
+        "Filtering inbound network traffic.",
+        "Providing a public cloud billing estimate."
+      ],
+      "answer": 0,
+      "explanation": "DevTest Labs is a self-service environment for developers.",
+      "elaborated_feedback": "The guide says Azure DevTest Labs enables developers on teams to efficiently self-manage virtual machines and PaaS resources without waiting for approvals. That is the core exam idea: self-service development environments.",
+      "practical_example": "A developer spins up a test VM for a day and then deletes it when finished."
+    },
+    {
+      "question": "Which statement best describes External Identities in the guide?",
+      "options": [
+        "External users can bring their own identities outside your organization.",
+        "Only internal users can access Azure resources.",
+        "External identities are the same as storage accounts.",
+        "External identities are a type of VM scaling option."
+      ],
+      "answer": 0,
+      "explanation": "External Identities allow outside users to use their own identities.",
+      "elaborated_feedback": "The guide says external users can bring their own identities outside of your organization. This is the collaboration and identity-federation concept in the material.",
+      "practical_example": "A partner organization signs in using its own identity rather than creating a separate internal account."
+    },
+    {
+      "question": "What is Passwordless authentication in the guide?",
+      "options": [
+        "Replacing the password with something users have, plus something they know or are.",
+        "A method that removes all identity verification.",
+        "A way to secure storage accounts only.",
+        "A process for scaling virtual machines."
+      ],
+      "answer": 0,
+      "explanation": "Passwordless removes the password and uses other factors instead.",
+      "elaborated_feedback": "The guide says the password is removed and replaced with something users have, such as a laptop or phone, plus something users are or know, such as biometrics or a PIN. That is the core security concept.",
+      "practical_example": "A user signs in with a phone and fingerprint instead of typing a password."
+    },
+    {
+      "question": "Which statement best describes Availability Zones in the guide?",
+      "options": [
+        "Unique physical locations within an Azure region with at least three zones per region.",
+        "A method for billing customers monthly.",
+        "A security rule set for a subnet.",
+        "A type of Git workflow."
+      ],
+      "answer": 0,
+      "explanation": "Availability Zones are separate physical locations inside a region.",
+      "elaborated_feedback": "The guide defines Availability Zones as unique physical locations within an Azure region, made up of one or more datacenters, with a minimum of three zones in each region. That makes them the resilience building block beyond a single datacenter.",
+      "practical_example": "A web app is deployed across multiple zones so one datacenter failure does not take it down."
+    }
+  ]
+}
